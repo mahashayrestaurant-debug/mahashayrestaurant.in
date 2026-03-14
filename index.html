@@ -1,269 +1,579 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<title>Mahashay Restaurant | Franchise & Catering</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-:root{
-  --red:#e30613;
-  --dark:#111;
-  --light:#fff;
-  --gray:#f5f5f5;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body{
-  background:var(--gray);
-}
-
-/* HEADER */
-header{
-  background:var(--red);
-  color:#fff;
-  padding:15px 25px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-.brand img{
-  width:60px;
-  height:60px;
-  border-radius:12px;
-  background:#fff;
-  padding:6px;
-}
-
-.brand h1{
-  font-size:26px;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-  margin:0 10px;
-  font-weight:500;
-}
-
-nav a:hover{
-  text-decoration:underline;
-}
-
-/* HERO */
-.hero{
-  height:85vh;
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  padding:20px;
-}
-
-.hero img{
-  width:130px;
-  margin-bottom:20px;
-}
-
-.hero h2{
-  font-size:44px;
-  margin-bottom:10px;
-}
-
-.hero p{
-  font-size:18px;
-  margin-bottom:25px;
-}
-
-.btn{
-  background:var(--red);
-  color:#fff;
-  padding:14px 28px;
-  border-radius:30px;
-  text-decoration:none;
-  font-size:16px;
-  margin:5px;
-  display:inline-block;
-}
-
-.btn:hover{
-  background:#b8040f;
-}
-
-/* SECTION */
-section{
-  padding:60px 20px;
-  max-width:1100px;
-  margin:auto;
-}
-
-section h3{
-  text-align:center;
-  font-size:32px;
-  color:var(--red);
-  margin-bottom:20px;
-}
-
-section p{
-  text-align:center;
-  max-width:800px;
-  margin:auto;
-  line-height:1.7;
-}
-
-/* CARDS */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  margin-top:40px;
-}
-
-.card{
-  background:#fff;
-  padding:25px;
-  border-radius:18px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
-  text-align:center;
-}
-
-.card h4{
-  color:var(--red);
-  margin-bottom:10px;
-}
-
-/* CONTACT */
-.contact{
-  background:#fff;
-  border-radius:20px;
-  padding:40px;
-  text-align:center;
-}
-
-.whatsapp{
-  background:#25D366;
-  color:#fff;
-  padding:16px 32px;
-  border-radius:40px;
-  text-decoration:none;
-  font-size:18px;
-  display:inline-block;
-  margin-top:20px;
-}
-
-.whatsapp:hover{
-  background:#1da851;
-}
-
-/* FOOTER */
-footer{
-  background:#111;
-  color:#ccc;
-  text-align:center;
-  padding:20px;
-  margin-top:40px;
-}
-
-footer span{
-  color:#ffcc00;
-}
-
-@media(max-width:600px){
-  .hero h2{font-size:32px;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Kolkata Sweets in Gurgaon | Mahashay Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar to match the brand */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF0000;
+            border-radius: 4px;
+        }
+    </style>
 </head>
+<body class="text-lg text-gray-700 antialiased bg-gray-50 selection:bg-[#FF0000] selection:text-white">
 
-<body>
-
-<header>
-  <div class="brand">
-    <img src="logo.png" alt="Mahashay Restaurant Logo">
-    <h1>Mahashay Restaurant</h1>
-  </div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#franchise">Franchise</a>
-    <a href="#catering">Catering</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<div class="hero">
-  <div>
-    <img src="logo.png" alt="Mahashay Logo">
-    <h2>Taste That Builds Trust</h2>
-    <p>Franchise • Catering • Quality Food</p>
-    <a class="btn" href="#franchise">Take Franchise</a>
-    <a class="btn" href="#catering">Catering Order</a>
-  </div>
-</div>
-
-<section id="about">
-  <h3>About Mahashay Restaurant</h3>
-  <p>
-    Mahashay Restaurant delivers authentic taste with hygiene and quality.
-    We are expanding across India with a strong franchise model and customized
-    catering services for all occasions.
-  </p>
-</section>
-
-<section id="franchise">
-  <h3>Franchise Opportunity</h3>
-  <div class="cards">
-    <div class="card">
-      <h4>Low Investment</h4>
-      <p>Affordable franchise with high growth potential.</p>
+    <!-- Top Promo Bar -->
+    <div class="bg-[#FF0000] text-white py-2 px-4 text-center text-sm font-medium flex justify-center items-center gap-2">
+        <i data-lucide="sparkles" class="w-4 h-4 text-[#FFD700]" stroke-width="1.5"></i>
+        <span>Festive Special: Get 10% off on all assorted sweet boxes! Use code MAHASHAY10</span>
+        <i data-lucide="sparkles" class="w-4 h-4 text-[#FFD700]" stroke-width="1.5"></i>
     </div>
-    <div class="card">
-      <h4>Complete Support</h4>
-      <p>Training, branding, marketing & operations.</p>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="relative group">
+                        <div class="absolute -inset-2 bg-[#FF0000] rounded-full opacity-20 group-hover:opacity-40 blur-lg transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        <img class="relative h-16 w-16 md:h-20 md:w-20 object-contain rounded-2xl drop-shadow-[0_0_15px_rgba(255,0,0,0.3)]" src="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/131918104/a4bf59b9-0d2c-46fe-b439-036d66bb3446/index.html.jpg?AWSAccessKeyId=ASIA2F3EMEYE6JVLTPJJ&Signature=gg2WYuuQmoePKfCNqRpWWkR%2BQRA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjENv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDYgfhS1Fk%2FSLQaXa5IRHZtnHoGdM5jBCVCZ%2BYD5VG2nQIgLK2wJDM9GqXT%2FBjhIO6XAlJ%2Fg%2Bv49RfHg8kfgfPRuQkq%2FAQIo%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDMPNII2wn1AnldvwLCrQBP1Tdobl9i%2FqrTIpqJxAMzbPFNWvMwYN2PX1TNgonlpgRLIaxKPeFMYSZlKumyxmRxeOHMjujjLePWuCdnwsA4yyFbAfkeHSgBnpN4USousoFQ32QhN0AMAKE%2BKAeKbnqYJzRxCIGG8eEeKrsKcBg%2FgMvD%2FN0%2BzCzY6vBhWNG4nuWkqZzzIHSJmtzNkZszjT35gDJVnoq23wI4sonb5zek1tnS69ArGi95U%2BC1DS2so9lQf00nOWNUyos9W6jQ078ilF7sY3unQU%2B67i5zUGKxTuWQ7EEwN2olh%2BXFlAr8sd8rUr6jvM8h6nrH9o5McxtZC%2FHbZ0hUvkdv2h5ZOP2ccGBynlBiyw7UKaTOZo%2BuMUWqpSaWQbRbwHLYOzljStrbIsKxaet9SLUmRvI1jpfizITGuQAkQahKM%2B5nAzFxvUY5yZTLOS6r1bDrfOGe7SQMgzJAXamVFovE9i5IlUNJdkM2N8NguBYZYDvSzQ0iMO8MaQhzcIBshN0ODkQlpZmHHR%2FyidditthI81092o8d9a6w98JzEPBXc8nl9n2uR%2FQ%2BIlo3mqQCBaJ4g9BDOmqY51xLeaoxb9ERDuqJD1k5lvTtFdBRHnN%2FuYMP8FQitORTEHMtS2BxdMyHw4l9Xs9eUzs54M01oxNEs7T8RxNpuL0P92LX4Dfm250rHKYPl5q%2Bcv5hpQtsUduz6Yy%2BjFCYUWoShMfYv%2B1VygPl3CRrC9%2FpH0D7PHfvG2SYjDfYv901yUgV6%2F3%2BMLia0tMhYmZkI3Sjp115yWhwyWhSWCj1YwpOXUzQY6mAE1gJL8bqrBFVAhRHipJfQVK8E3QzUTO6VYH%2FeblP%2FwFDcs4LEuvlDPY3NE7a3Ej0dnUQEJHEvTTbA5wLBPJMAfQrMwSWFAOPyLgBxOqSitvMsnMiMeLM3yZGtYopVnk3lxnkB2K4zs1BNrCyIiubVjCyURoWxdrShzb%2FEsaGTqG%2BgPz4GZdM0t0OCgoEJJy989UvWIFdstVg%3D%3D&Expires=1773484367" alt="Mahashay Restaurant Logo">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-lg font-medium text-[#FF0000]">Home</a>
+                    <a href="#menu" class="text-lg font-medium hover:text-[#FF0000] transition-colors">Menu</a>
+                    <a href="#about" class="text-lg font-medium hover:text-[#FF0000] transition-colors">About</a>
+                    <a href="#franchise" class="text-lg font-medium hover:text-[#FF0000] transition-colors">Franchise</a>
+                    <a href="#locations" class="text-lg font-medium hover:text-[#FF0000] transition-colors">Locations</a>
+                    <a href="#contact" class="text-lg font-medium hover:text-[#FF0000] transition-colors">Contact</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex items-center space-x-6">
+                    <div class="hidden sm:flex items-center border border-gray-200 rounded-full p-1 bg-gray-50">
+                        <button class="px-3 py-1 rounded-full bg-white shadow-sm text-sm font-medium text-gray-900">EN</button>
+                        <button class="px-3 py-1 rounded-full text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">HI</button>
+                    </div>
+                    <button class="relative p-2 text-gray-700 hover:text-[#FF0000] transition-colors group">
+                        <i data-lucide="shopping-cart" class="w-6 h-6" stroke-width="1.5"></i>
+                        <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-semibold leading-none text-white transform translate-x-1/4 -translate-y-1/4 bg-[#FF0000] rounded-full group-hover:scale-110 transition-transform">0</span>
+                    </button>
+                    <button class="md:hidden p-2 text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6" stroke-width="1.5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Blurred Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Kolkata Street Food" class="w-full h-full object-cover scale-105" />
+            <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-8">
+                <i data-lucide="map-pin" class="w-5 h-5 text-[#FFD700]" stroke-width="1.5"></i>
+                <span class="text-sm font-medium tracking-tight uppercase">Gurgaon Flagship Store</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-semibold tracking-tight text-white mb-6 leading-tight drop-shadow-lg">
+                The Taste of <br />
+                <span class="text-[#FFD700]">Old Kolkata Cuisine</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl font-light">
+                Authentic Bengali sweets, savories, and traditional meals crafted with generations of heritage.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <button class="px-8 py-4 bg-[#FF0000] text-white rounded-xl text-lg font-medium hover:bg-red-700 transition-colors shadow-lg shadow-red-900/20 flex items-center justify-center gap-2 group">
+                    <i data-lucide="shopping-bag" class="w-5 h-5 group-hover:scale-110 transition-transform" stroke-width="1.5"></i>
+                    Order Online
+                </button>
+                <button class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/30 rounded-xl text-lg font-medium hover:bg-white/20 transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="store" class="w-5 h-5" stroke-width="1.5"></i>
+                    Visit Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Ribbon -->
+    <div class="bg-[#FFD700] py-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <i data-lucide="award" class="w-8 h-8 text-[#FF0000]" stroke-width="1.5"></i>
+                <h3 class="text-2xl font-semibold tracking-tight text-gray-900">Today's Best Sellers</h3>
+            </div>
+            <div class="flex gap-8 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto scrollbar-hide snap-x">
+                <div class="flex items-center gap-4 bg-white/50 px-4 py-2 rounded-xl min-w-max snap-start">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" alt="Rasgulla">
+                    <div>
+                        <p class="font-semibold tracking-tight text-gray-900">Classic Rasgulla</p>
+                        <p class="text-sm text-[#FF0000] font-medium">₹25 / pc</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-white/50 px-4 py-2 rounded-xl min-w-max snap-start">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" alt="Kathi Roll">
+                    <div>
+                        <p class="font-semibold tracking-tight text-gray-900">Chicken Kathi Roll</p>
+                        <p class="text-sm text-[#FF0000] font-medium">₹120</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-white/50 px-4 py-2 rounded-xl min-w-max snap-start">
+                    <img src="https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" alt="Mishti Doi">
+                    <div>
+                        <p class="font-semibold tracking-tight text-gray-900">Mishti Doi</p>
+                        <p class="text-sm text-[#FF0000] font-medium">₹60 / kulhad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <h4>Trusted Brand</h4>
-      <p>Loved by customers for taste & quality.</p>
-    </div>
-  </div>
-</section>
 
-<section id="catering">
-  <h3>Catering Services</h3>
-  <p>
-    We accept catering orders as per your requirement for weddings,
-    parties, corporate events, and festivals.
-  </p>
-</section>
+    <!-- Featured Menu Grid -->
+    <section id="menu" class="py-24 bg-white relative">
+        <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-medium text-[#FF0000] tracking-widest uppercase mb-3">Our Offerings</h2>
+                <h3 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-6">Kolkata Specialties</h3>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <button class="px-5 py-2 rounded-full bg-gray-100 text-gray-900 font-medium hover:bg-gray-200 transition-colors">All</button>
+                    <button class="px-5 py-2 rounded-full bg-[#FF0000] text-white shadow-md shadow-red-900/10 font-medium">Sweets</button>
+                    <button class="px-5 py-2 rounded-full bg-gray-100 text-gray-900 font-medium hover:bg-gray-200 transition-colors">Savories</button>
+                    <button class="px-5 py-2 rounded-full bg-gray-100 text-gray-900 font-medium hover:bg-gray-200 transition-colors">Meals</button>
+                </div>
+            </div>
 
-<section id="contact">
-  <div class="contact">
-    <h3>Contact Us</h3>
-    <p>Franchise & Catering Orders</p>
-    <a class="whatsapp" href="https://wa.me/8447145949" target="_blank">
-      📲 WhatsApp: 8447145949
-    </a>
-  </div>
-</section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Rasgulla" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-xs font-semibold text-green-600 flex items-center gap-1 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-green-500 border border-green-700"></span> Veg
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-xl font-semibold tracking-tight text-gray-900 line-clamp-1">Sponge Rasgulla</h4>
+                        </div>
+                        <p class="text-gray-500 mb-6 line-clamp-2">Soft, spongy cottage cheese balls soaked in light sugar syrup.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <span class="text-2xl font-semibold tracking-tight text-gray-900">₹250 <span class="text-sm font-normal text-gray-500">/ 10 pcs</span></span>
+                            <button class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-[#FF0000] hover:bg-[#FF0000] hover:text-white transition-colors border border-gray-100 hover:border-transparent">
+                                <i data-lucide="plus" class="w-6 h-6" stroke-width="1.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-<footer>
-  © 2026 <span>Mahashay Restaurant</span> | All Rights Reserved
-</footer>
+                <!-- Card 2 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=600&q=80" alt="Mishti Doi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-xs font-semibold text-green-600 flex items-center gap-1 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-green-500 border border-green-700"></span> Veg
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-xl font-semibold tracking-tight text-gray-900 mb-2 line-clamp-1">Authentic Mishti Doi</h4>
+                        <p class="text-gray-500 mb-6 line-clamp-2">Classic Bengali sweetened yogurt set in traditional clay pots.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <span class="text-2xl font-semibold tracking-tight text-gray-900">₹150 <span class="text-sm font-normal text-gray-500">/ 250g</span></span>
+                            <button class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-[#FF0000] hover:bg-[#FF0000] hover:text-white transition-colors border border-gray-100 hover:border-transparent">
+                                <i data-lucide="plus" class="w-6 h-6" stroke-width="1.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" alt="Kathi Roll" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-xs font-semibold text-red-600 flex items-center gap-1 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-red-600 border border-red-800"></span> Non-Veg
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-xl font-semibold tracking-tight text-gray-900 mb-2 line-clamp-1">Kolkata Kathi Roll</h4>
+                        <p class="text-gray-500 mb-6 line-clamp-2">Flaky paratha wrapped with spiced chicken, onions, and tangy sauces.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <span class="text-2xl font-semibold tracking-tight text-gray-900">₹120 <span class="text-sm font-normal text-gray-500">/ pc</span></span>
+                            <button class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-[#FF0000] hover:bg-[#FF0000] hover:text-white transition-colors border border-gray-100 hover:border-transparent">
+                                <i data-lucide="plus" class="w-6 h-6" stroke-width="1.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg" alt="Kosha Mangsho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-xs font-semibold text-red-600 flex items-center gap-1 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-red-600 border border-red-800"></span> Non-Veg
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-xl font-semibold tracking-tight text-gray-900 mb-2 line-clamp-1">Kosha Mangsho</h4>
+                        <p class="text-gray-500 mb-6 line-clamp-2">Slow-cooked rich and spicy mutton curry, a Sunday staple.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <span class="text-2xl font-semibold tracking-tight text-gray-900">₹450 <span class="text-sm font-normal text-gray-500">/ plate</span></span>
+                            <button class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-[#FF0000] hover:bg-[#FF0000] hover:text-white transition-colors border border-gray-100 hover:border-transparent">
+                                <i data-lucide="plus" class="w-6 h-6" stroke-width="1.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <button class="inline-flex items-center gap-2 px-8 py-4 bg-white border-2 border-[#FF0000] text-[#FF0000] rounded-xl text-lg font-medium hover:bg-[#FF0000] hover:text-white transition-all shadow-sm">
+                    View Full Menu
+                    <i data-lucide="arrow-right" class="w-5 h-5" stroke-width="1.5"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-50 relative overflow-hidden">
+        <div class="absolute -left-40 top-20 w-96 h-96 bg-[#FF0000] rounded-full mix-blend-multiply filter blur-3xl opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1000&q=80" alt="Kolkata Sweet Making" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl z-20 border border-gray-100 max-w-xs hidden md:block">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-[#FFD700]/20 rounded-full flex items-center justify-center">
+                                <i data-lucide="history" class="w-6 h-6 text-[#FF0000]" stroke-width="1.5"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-semibold tracking-tight text-gray-900">Est. 2023</p>
+                                <p class="text-sm text-gray-500 font-medium">Gurgaon Flagship</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-sm font-medium text-[#FF0000] tracking-widest uppercase mb-3">Our Heritage</h2>
+                    <h3 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-8 leading-tight">Bringing the timeless flavors of old Kolkata to Gurgaon.</h3>
+                    
+                    <div class="space-y-6 text-gray-600 mb-10">
+                        <p>
+                            Discover Mahashay Restaurant. Inspired by the bustling streets and legendary sweet shops of Kolkata, we craft authentic Bengali sweets, savories, and wholesome meals using traditional recipes passed down through generations.
+                        </p>
+                        <p>
+                            We believe that true flavor lies in authenticity. That's why family-owned passion meets modern hygiene in our kitchens, ensuring an unforgettable taste of heritage in every bite, whether it's our melt-in-the-mouth Sandesh or perfectly spiced Kosha Mangsho.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-8 pt-8 border-t border-gray-200">
+                        <div>
+                            <h4 class="text-3xl font-semibold tracking-tight text-gray-900 mb-2">100%</h4>
+                            <p class="text-gray-500 font-medium">Authentic Recipes</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-semibold tracking-tight text-gray-900 mb-2">50+</h4>
+                            <p class="text-gray-500 font-medium">Kolkata Varieties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Section -->
+    <section id="franchise" class="relative py-24 bg-[#FF0000] overflow-hidden">
+        <!-- Background Decorations -->
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[#FFD700] to-transparent rounded-full blur-[100px] opacity-20 translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="lg:col-span-6 text-white">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8">
+                        <i data-lucide="trending-up" class="w-5 h-5 text-[#FFD700]" stroke-width="1.5"></i>
+                        <span class="text-sm font-medium tracking-tight">Franchise Opportunities Available</span>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-semibold tracking-tight mb-6">Join the Mahashay Family</h2>
+                    <p class="text-xl text-white/80 mb-10 font-light">
+                        Expand the authentic taste of Kolkata across India. Partner with a proven business model and bring heritage to your city.
+                    </p>
+                    
+                    <ul class="space-y-6 mb-12">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="check" class="w-5 h-5 text-[#FFD700]" stroke-width="1.5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium tracking-tight">Proven Business Model</h4>
+                                <p class="text-white/70">High ROI with standardized operations.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="chef-hat" class="w-5 h-5 text-[#FFD700]" stroke-width="1.5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium tracking-tight">Exclusive Recipes & Supply</h4>
+                                <p class="text-white/70">Centralized kitchen support for authentic taste.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="megaphone" class="w-5 h-5 text-[#FFD700]" stroke-width="1.5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium tracking-tight">Marketing & Training Help</h4>
+                                <p class="text-white/70">End-to-end support to launch and scale.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="inline-block border border-white/30 rounded-xl p-4 bg-white/5 backdrop-blur-sm">
+                        <p class="text-sm text-white/70 font-medium">Investment starting from</p>
+                        <p class="text-3xl font-semibold tracking-tight text-[#FFD700]">₹XX Lakhs</p>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="lg:col-span-6 lg:ml-8">
+                    <div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl">
+                        <h3 class="text-2xl font-semibold tracking-tight text-gray-900 mb-2">Apply Now</h3>
+                        <p class="text-gray-500 mb-8">Fill out the details below and our franchise team will contact you shortly.</p>
+                        
+                        <form class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-lg focus:ring-2 focus:ring-[#FF0000]/20 focus:border-[#FF0000] outline-none transition-all placeholder-gray-400" placeholder="John Doe">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">Phone Number</label>
+                                    <input type="tel" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-lg focus:ring-2 focus:ring-[#FF0000]/20 focus:border-[#FF0000] outline-none transition-all placeholder-gray-400" placeholder="+91 00000 00000">
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-lg focus:ring-2 focus:ring-[#FF0000]/20 focus:border-[#FF0000] outline-none transition-all placeholder-gray-400" placeholder="john@example.com">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium text-gray-700">City for Franchise</label>
+                                    <!-- Custom Dropdown styling -->
+                                    <div class="relative">
+                                        <select class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-lg appearance-none focus:ring-2 focus:ring-[#FF0000]/20 focus:border-[#FF0000] outline-none transition-all text-gray-700">
+                                            <option value="" disabled selected>Select a city</option>
+                                            <option value="delhi">Delhi NCR</option>
+                                            <option value="mumbai">Mumbai</option>
+                                            <option value="bangalore">Bangalore</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" stroke-width="1.5"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Message (Optional)</label>
+                                <textarea rows="3" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-lg focus:ring-2 focus:ring-[#FF0000]/20 focus:border-[#FF0000] outline-none transition-all placeholder-gray-400 resize-none" placeholder="Tell us about your background..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 bg-[#FF0000] text-white rounded-xl text-lg font-medium hover:bg-red-700 transition-colors shadow-md mt-4 flex items-center justify-center gap-2">
+                                Submit Application
+                                <i data-lucide="arrow-right" class="w-5 h-5" stroke-width="1.5"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations & Contact Section -->
+    <section id="locations" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-medium text-[#FF0000] tracking-widest uppercase mb-3">Visit & Connect</h2>
+                <h3 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900">Find Us in Gurgaon</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-gray-50 rounded-3xl p-4 md:p-8 border border-gray-100">
+                
+                <!-- Left: Map & Info -->
+                <div class="space-y-8">
+                    <div class="h-80 w-full bg-gray-200 rounded-2xl overflow-hidden border border-gray-200 shadow-inner relative">
+                        <!-- Placeholder for Google Maps iframe to keep layout clean, simulating map -->
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-50 grayscale"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white px-6 py-4 rounded-xl shadow-lg flex items-center gap-3">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-[#FF0000]" stroke-width="1.5"></i>
+                                <span class="font-medium tracking-tight text-gray-900">Mahashay Restaurant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h4 class="text-2xl font-semibold tracking-tight text-gray-900 mb-6">Flagship Store</h4>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-[#FF0000] mt-1 shrink-0" stroke-width="1.5"></i>
+                                <div>
+                                    <p class="font-medium text-gray-900">Sector 57, Housing Board Colony</p>
+                                    <p class="text-gray-500">Gurgaon, Haryana 122011</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="clock" class="w-6 h-6 text-[#FF0000] mt-1 shrink-0" stroke-width="1.5"></i>
+                                <div>
+                                    <p class="font-medium text-gray-900">Open Daily</p>
+                                    <p class="text-gray-500">10:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                            <p class="text-[#FF0000] font-medium inline-flex items-center gap-2">
+                                <i data-lucide="sparkles" class="w-5 h-5" stroke-width="1.5"></i>
+                                Coming soon to more cities!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact -->
+                <div id="contact" class="flex flex-col justify-center space-y-8">
+                    
+                    <a href="https://wa.me/8447145949" target="_blank" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white p-6 rounded-2xl shadow-lg shadow-green-900/10 transition-all flex items-center gap-6 group">
+                        <div class="bg-white/20 p-4 rounded-full group-hover:scale-110 transition-transform">
+                            <i data-lucide="message-circle" class="w-8 h-8 text-white" stroke-width="1.5"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-white/80 mb-1 uppercase tracking-wider">Fastest Response</p>
+                            <p class="text-2xl font-semibold tracking-tight">Chat on WhatsApp</p>
+                        </div>
+                        <i data-lucide="external-link" class="w-6 h-6 ml-auto opacity-50 group-hover:opacity-100 transition-opacity" stroke-width="1.5"></i>
+                    </a>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h4 class="text-2xl font-semibold tracking-tight text-gray-900 mb-6">Get in Touch</h4>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-[#FF0000]/30 transition-colors">
+                                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
+                                    <i data-lucide="phone" class="w-5 h-5 text-[#FF0000]" stroke-width="1.5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 font-medium">Call for Orders</p>
+                                    <p class="text-xl font-semibold tracking-tight text-gray-900">+91 84471 45949</p>
+                                </div>
+                            </div>
+
+                            <a href="https://www.instagram.com/mahashayrestaurant?igsh=eXliNDN1dG0wdzhs" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-[#FF0000]/30 transition-colors group">
+                                <div class="w-12 h-12 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 rounded-full flex items-center justify-center shadow-sm shrink-0">
+                                    <i data-lucide="instagram" class="w-5 h-5 text-white" stroke-width="1.5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 font-medium">Follow our journey</p>
+                                    <p class="text-xl font-semibold tracking-tight text-gray-900 group-hover:text-[#FF0000] transition-colors">@mahashayrestaurant</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#8B0000] text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                
+                <div class="col-span-1 md:col-span-1">
+                    <img class="h-16 w-auto mb-6 bg-white p-2 rounded-xl" src="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/131918104/a4bf59b9-0d2c-46fe-b439-036d66bb3446/index.html.jpg?AWSAccessKeyId=ASIA2F3EMEYE6JVLTPJJ&Signature=gg2WYuuQmoePKfCNqRpWWkR%2BQRA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjENv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDYgfhS1Fk%2FSLQaXa5IRHZtnHoGdM5jBCVCZ%2BYD5VG2nQIgLK2wJDM9GqXT%2FBjhIO6XAlJ%2Fg%2Bv49RfHg8kfgfPRuQkq%2FAQIo%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDMPNII2wn1AnldvwLCrQBP1Tdobl9i%2FqrTIpqJxAMzbPFNWvMwYN2PX1TNgonlpgRLIaxKPeFMYSZlKumyxmRxeOHMjujjLePWuCdnwsA4yyFbAfkeHSgBnpN4USousoFQ32QhN0AMAKE%2BKAeKbnqYJzRxCIGG8eEeKrsKcBg%2FgMvD%2FN0%2BzCzY6vBhWNG4nuWkqZzzIHSJmtzNkZszjT35gDJVnoq23wI4sonb5zek1tnS69ArGi95U%2BC1DS2so9lQf00nOWNUyos9W6jQ078ilF7sY3unQU%2B67i5zUGKxTuWQ7EEwN2olh%2BXFlAr8sd8rUr6jvM8h6nrH9o5McxtZC%2FHbZ0hUvkdv2h5ZOP2ccGBynlBiyw7UKaTOZo%2BuMUWqpSaWQbRbwHLYOzljStrbIsKxaet9SLUmRvI1jpfizITGuQAkQahKM%2B5nAzFxvUY5yZTLOS6r1bDrfOGe7SQMgzJAXamVFovE9i5IlUNJdkM2N8NguBYZYDvSzQ0iMO8MaQhzcIBshN0ODkQlpZmHHR%2FyidditthI81092o8d9a6w98JzEPBXc8nl9n2uR%2FQ%2BIlo3mqQCBaJ4g9BDOmqY51xLeaoxb9ERDuqJD1k5lvTtFdBRHnN%2FuYMP8FQitORTEHMtS2BxdMyHw4l9Xs9eUzs54M01oxNEs7T8RxNpuL0P92LX4Dfm250rHKYPl5q%2Bcv5hpQtsUduz6Yy%2BjFCYUWoShMfYv%2B1VygPl3CRrC9%2FpH0D7PHfvG2SYjDfYv901yUgV6%2F3%2BMLia0tMhYmZkI3Sjp115yWhwyWhSWCj1YwpOXUzQY6mAE1gJL8bqrBFVAhRHipJfQVK8E3QzUTO6VYH%2FeblP%2FwFDcs4LEuvlDPY3NE7a3Ej0dnUQEJHEvTTbA5wLBPJMAfQrMwSWFAOPyLgBxOqSitvMsnMiMeLM3yZGtYopVnk3lxnkB2K4zs1BNrCyIiubVjCyURoWxdrShzb%2FEsaGTqG%2BgPz4GZdM0t0OCgoEJJy989UvWIFdstVg%3D%3D&Expires=1773484367" alt="Mahashay Restaurant">
+                    <p class="text-white/70 font-light mb-6">Bringing the timeless flavors of old Kolkata to Gurgaon.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5" stroke-width="1.5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mahashayrestaurant?igsh=eXliNDN1dG0wdzhs" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5" stroke-width="1.5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5" stroke-width="1.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold tracking-tight mb-6 text-[#FFD700]">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#menu" class="text-white/70 hover:text-white transition-colors">Our Menu</a></li>
+                        <li><a href="#about" class="text-white/70 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#franchise" class="text-white/70 hover:text-white transition-colors">Franchise</a></li>
+                        <li><a href="#locations" class="text-white/70 hover:text-white transition-colors">Find a Store</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold tracking-tight mb-6 text-[#FFD700]">Categories</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Bengali Sweets</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Namkeens & Savories</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Kolkata Street Food</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Festive Gifting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold tracking-tight mb-6 text-[#FFD700]">Newsletter</h4>
+                    <p class="text-white/70 font-light mb-4">Subscribe for offers and updates.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-l-xl text-white placeholder-white/50 focus:outline-none focus:border-[#FFD700]">
+                        <button class="px-4 py-3 bg-[#FFD700] text-black rounded-r-xl font-medium hover:bg-yellow-500 transition-colors">
+                            <i data-lucide="send" class="w-5 h-5" stroke-width="1.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+                <p>&copy; 2024 Mahashay Restaurant. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
